@@ -1,0 +1,58 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Display]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Personalize]
+@=-
+"muiverb"="@%systemroot%\\system32\\themecpl.dll,-10"
+"subcommands"="Windows settings;Display;Personalize;GodMode;Logout;Reboot;Shutdown"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Display]
+@="@%SystemRoot%\\System32\\display.dll,-4"
+"Icon"="%SystemRoot%\\System32\\display.dll,-1"
+"SettingsUri"="ms-settings:display"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Display\command]
+"DelegateExecute"="{556FF0D6-A1EE-49E5-9FA4-90AE116AD744}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\GodMode]
+@="Режим Бога"
+"Icon"="shell32.dll,21"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\GodMode\command]
+@="explorer shell:::{ED7BA470-8E54-465E-825C-99712043E01C}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Logout]
+@="Выход"
+"Icon"="shell32.dll,44"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Logout\command]
+@="logoff"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Personalize]
+@="@%systemroot%\\system32\\themecpl.dll,-10"
+"Icon"="%systemroot%\\system32\\themecpl.dll,-1"
+"SettingsUri"="ms-settings:personalization-background"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Personalize\command]
+"DelegateExecute"="{556FF0D6-A1EE-49E5-9FA4-90AE116AD744}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Reboot]
+@="Перезагрузка"
+"Icon"="shell32.dll,238"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Reboot\command]
+@="shutdown.exe -r -t 0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Shutdown]
+@="Выключение"
+"Icon"="shell32.dll,27"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Shutdown\command]
+@="shutdown.exe -s -t 0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows settings]
+@="Параметры Windows"
+"Icon"="%systemroot%\\ImmersiveControlPanel\\SystemSettings.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows settings\command]
+@="explorer shell:AppsFolder\\Windows.ImmersiveControlPanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"

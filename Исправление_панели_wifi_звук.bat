@@ -1,0 +1,1 @@
+for /f %I in ('reg query "HKLM\SYSTEM\CurrentControlSet\Services" /k /f "CDPUserSvc" ^| find /i "CDPUserSvc"') do (reg add "%I" /v "Start" /t reg_dword /d 2 /f)

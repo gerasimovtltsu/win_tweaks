@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+; Отключение автоперезагрузки
+"AlwaysAutoRebootAtScheduledTime"=dword:00000000
+; Минорные обновления не устанавливаются автоматически
+"AutoInstallMinorUpdates"=dword:00000000
+; Уведомление перед загрузкой обновлений
+"AUOptions"=dword:00000002
+; Вошедший в систему пользователь может выбрать, перезагружать свой компьютер или нет
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+; Отключение автоматического обновления
+"NoAutoUpdate"=dword:00000001
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\AU]
+"AlwaysAutoRebootAtScheduledTime"=dword:00000000
+"AutoInstallMinorUpdates"=dword:00000000
+"AUOptions"=dword:00000002
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"NoAutoUpdate"=dword:00000001
