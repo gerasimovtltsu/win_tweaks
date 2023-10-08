@@ -1,5 +1,10 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\Показать/Скрыть системные папки]
-"Icon"="imageres.dll,266"
+;Для Windows 8.1:
+;"Icon"="SHELL32.dll,4"
+;Для Windows 10:
+;"Icon"="imageres.dll,266"
+;Для Windows 11:
+"Icon"="imageres.dll,267"
 "ExplorerCommandHandler"="{f7300245-1f4b-41ba-8948-6fd392064494}"
