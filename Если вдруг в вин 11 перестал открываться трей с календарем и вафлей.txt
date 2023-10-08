@@ -1,7 +1,0 @@
-1. Вызываем диалоговое окно "Выполнить" с помощью клавиш Windows key + R
-2. Вводим "regedit" и нажимаем ок.
-3. Идём по пути Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows
-4. Далее заходим в папку Expoler. Если её нет - создаём её (ПКМ по папке Windows New > Key)
-5. Добавляем значения в папке Expoler (ПКМ > New > DWORD (32-bit)) и называем его DisableNotificationCenter
-6. Далее двойной клик по нему и устанавливаем значение на 0.
-7. Перезагружаем компьютер. Должно работать.

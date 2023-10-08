@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shell\Firewall_Allow]
+@="Разрешить доступ в интернет"
+"Extended"=""
+"Icon"="netcenter.dll,10"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shell\Firewall_Allow\command]
+@="netsh advfirewall firewall delete rule name=\"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shell\Firewall_Block]
+@="Запретить доступ в интернет"
+"Extended"=""
+"Icon"="netcenter.dll,5"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shell\Firewall_Block\command]
+@="cmd /d /c \"netsh advfirewall firewall add rule name=\"%1\" dir=in action=block program=\"%1\" & netsh advfirewall firewall add rule name=\"%1\" dir=out action=block program=\"%1\"\""

@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.bmp\ShellNew]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.contact\ShellNew]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rtf\ShellNew]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.zip\CompressedFolder\ShellNew]

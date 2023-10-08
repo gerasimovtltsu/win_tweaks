@@ -1,0 +1,2 @@
+reg add "HKLM\SOFTWARE\Classes\Directory\background\shell\Byfer" /v "" /t REG_SZ /d "Clipboard" /f
+reg add "HKLM\SOFTWARE\Classes\Directory\background\shell\Byfer\command" /v "" /t REG_EXPAND_SZ /d "PowerShell \"Set-Clipboard -Value $null\"" /f

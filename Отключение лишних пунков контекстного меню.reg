@@ -1,0 +1,65 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shellex\ContextMenuHandlers\ModernSharing]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{470C0EBD-5D73-4d58-9CED-E91E22E23282}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{7AD84985-87B4-4a16-BE58-8B72A5B390F7}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\pintohome]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shellex\ContextMenuHandlers\Library Location]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3ds\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3ds\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3mf\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.3mf\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.bmp\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dae\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.dxf\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.fbx\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.gif\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.glb\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jfif\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpe\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpg\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.obj\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.obj\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ply\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ply\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.png\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.stl\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.stl\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.tif\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.tiff\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wrl\Shell\3D Edit]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.wrl\Shell\3D Print]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\Directory.Audio\shellex\ContextMenuHandlers\WMPShopMusic]

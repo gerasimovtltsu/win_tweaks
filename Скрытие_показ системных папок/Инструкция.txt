@@ -1,0 +1,2 @@
+1. ShowHideSysFldrs переместить в C:\\Windows\\ShowHideSysFldrs.vbs
+2. Запустить reg файл

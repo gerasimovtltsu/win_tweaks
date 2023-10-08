@@ -1,0 +1,1 @@
+Поместить Blank.ico в папку C:\Windows

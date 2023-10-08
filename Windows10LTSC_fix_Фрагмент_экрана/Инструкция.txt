@@ -1,0 +1,4 @@
+Установить через PowerShell два файла
+
+Add-AppPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx
+Add-AppPackage Microsoft.VCLibs.140.00_14.0.30704.0_x86__8wekyb3d8bbwe.appx
