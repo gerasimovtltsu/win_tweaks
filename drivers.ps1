@@ -1,29 +1,33 @@
 function Export-Drivers {
-	$backupPath = Read-Host "Введите путь для сохранения драйверов"
+	$backupPath = Read-Host "Р’РІРµРґРёС‚Рµ РїСѓС‚СЊ РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РґСЂР°Р№РІРµСЂРѕРІ"
 	if (-not (Test-Path -Path $backupPath)) {
 		New-Item -ItemType Directory -Path $backupPath
 	}
 	
 	pnputil.exe /export-driver * $backupPath
-	Write-Host "Драйверы успешно экспортированы в $backupPath"
+	Write-Host "Р”СЂР°Р№РІРµСЂС‹ СѓСЃРїРµС€РЅРѕ СЌРєСЃРїРѕСЂС‚РёСЂРѕРІР°РЅС‹ РІ $backupPath"
 }
 
 function Import-Drivers {
-	$importPath = Read-Host "Введите путь, откуда будут импортироваться драйверы"
-	pnputil /add-driver "$importPath\*.inf" /subdirs /install
-	$rebootRequired = Read-Host "Требуется ли перезагрузка после установки драйверов? (да/нет)"
-	if ($rebootRequired -eq "да") {
-        Write-Host "Планирование перезагрузки..."
+	$importPath = Read-Host "Р’РІРµРґРёС‚Рµ РїСѓС‚СЊ, РѕС‚РєСѓРґР° Р±СѓРґСѓС‚ РёРјРїРѕСЂС‚РёСЂРѕРІР°С‚СЊСЃСЏ РґСЂР°Р№РІРµСЂС‹"
+	$driver_inf_files = Get-ChildItem -Path $importPath -Filter "*.inf" -Recurse -File
+	foreach($driver_inf_file in $driver_inf_files) {
+		$driver_inf_file.FullName
+		pnputil.exe -i -a "$driver_inf_file.FullName"
+	}
+	$rebootRequired = Read-Host "РўСЂРµР±СѓРµС‚СЃСЏ Р»Рё РїРµСЂРµР·Р°РіСЂСѓР·РєР° РїРѕСЃР»Рµ СѓСЃС‚Р°РЅРѕРІРєРё РґСЂР°Р№РІРµСЂРѕРІ? (y/n)"
+	if ($rebootRequired -eq "y") {
+        Write-Host "РџР»Р°РЅРёСЂРѕРІР°РЅРёРµ РїРµСЂРµР·Р°РіСЂСѓР·РєРё..."
         Restart-Computer
     } else {
-        Write-Host "Перезагрузка не требуется. Процесс импорта завершен."
+        Write-Host "РџРµСЂРµР·Р°РіСЂСѓР·РєР° РЅРµ С‚СЂРµР±СѓРµС‚СЃСЏ. РџСЂРѕС†РµСЃСЃ РёРјРїРѕСЂС‚Р° Р·Р°РІРµСЂС€РµРЅ."
     }
 }
 
-Write-Host "Выберите действие:"
-Write-Host "1: Экспорт драйверов"
-Write-Host "2: Импорт драйверов"
-$choice = Read-Host "Введите номер действия (1 или 2)"
+Write-Host "Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ:"
+Write-Host "1: Р­РєСЃРїРѕСЂС‚ РґСЂР°Р№РІРµСЂРѕРІ"
+Write-Host "2: РРјРїРѕСЂС‚ РґСЂР°Р№РІРµСЂРѕРІ"
+$choice = Read-Host "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґРµР№СЃС‚РІРёСЏ (1 РёР»Рё 2)"
 
 switch ($choice) {
     "1" {
@@ -33,6 +37,6 @@ switch ($choice) {
         Import-Drivers
     }
     default {
-        Write-Host "Неверный выбор. Запустите скрипт заново и выберите 1 или 2."
+        Write-Host "РќРµРІРµСЂРЅС‹Р№ РІС‹Р±РѕСЂ. Р—Р°РїСѓСЃС‚РёС‚Рµ СЃРєСЂРёРїС‚ Р·Р°РЅРѕРІРѕ Рё РІС‹Р±РµСЂРёС‚Рµ 1 РёР»Рё 2."
     }
 }
